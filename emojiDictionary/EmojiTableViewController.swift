@@ -62,7 +62,7 @@ class EmojiTableViewController: UITableViewController {
               name: "Checkered Flag",
               description: "A black-and-white checkered flag.",
               usage: "completion")]
-                    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -70,7 +70,6 @@ class EmojiTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -82,13 +81,14 @@ class EmojiTableViewController: UITableViewController {
         } else {
             return 0
         }
-        
+
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
         let emoji = emojis[indexPath.row]
-        
+        let urlString = "http://godaddy.com"
+        print(urlString)
         cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
         cell.detailTextLabel?.text = emoji.description
 

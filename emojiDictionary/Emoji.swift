@@ -14,7 +14,7 @@ class Emoji {
     var name: String
     var description: String
     var usage: String
-    
+
     /// Constructor for Emoji object
     ///
     /// - Parameters:

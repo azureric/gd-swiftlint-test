@@ -1,0 +1,9 @@
+excluded:
+ - Pods
+custom_rules:
+ force_https:
+   name: "Force HTTPS over HTTP"
+   regex: "((?i))http(?!s)"
+   match_kinds: string
+   message: "HTTPS should be used instead of HTTP"
+   severity: warning
