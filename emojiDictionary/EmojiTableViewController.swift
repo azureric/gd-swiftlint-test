@@ -50,8 +50,10 @@ class EmojiTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
         let emoji = emojis[indexPath.row]
         
+        let thisisareallylongandawesomesuperstringwithalotofcharshahahahathisisareallylongandawesomesuperstringwithalotofcharshahahaha = "hello"
+        
         cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
-        cell.detailTextLabel?.text = emoji.description
+        cell.detailTextLabel?.text = emoji.description + thisisareallylongandawesomesuperstringwithalotofcharshahahahathisisareallylongandawesomesuperstringwithalotofcharshahahaha
 
         return cell
     }
