@@ -88,6 +88,8 @@ class EmojiTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
         let emoji = emojis[indexPath.row]
         let urlString = "http://godaddy.com"
+        let changeString = "this is a really really long  really really long  really really long  really really long  really really long  string contains a lots of charactoers "
+        print (changeString)
         print(urlString)
         cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
         cell.detailTextLabel?.text = emoji.description
